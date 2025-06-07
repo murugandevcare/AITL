@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/NotoSansTamil-Black.ttf",
+      "sha1": "c8610fa614a6b9d2501a8b2f8471eb5b0be6bd50"
+    },
+    {
+      "path": "assets/fonts/NotoSansTamil-Bold.ttf",
+      "sha1": "640a33d0ff1b0e26d94a8098ae783236a90d05f3"
+    },
+    {
+      "path": "assets/fonts/Roboto-Black.ttf",
+      "sha1": "d1678489a8d5645f16486ec52d77b651ff0bf327"
+    },
+    {
+      "path": "assets/fonts/Roboto-Bold.ttf",
+      "sha1": "508c35dee818addce6cc6d1fb6e42f039da5a7cf"
+    }
+  ]
+}
