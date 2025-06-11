@@ -53,30 +53,10 @@
 		<string>NotoSansTamil-Bold.ttf</string>
 		<string>Roboto-Black.ttf</string>
 		<string>Roboto-Bold.ttf</string>
-		<string>NotoSansTamil-ExtraBold.ttf</string>
-		<string>NotoSansTamil-ExtraLight.ttf</string>
-		<string>NotoSansTamil-Light.ttf</string>
 		<string>NotoSansTamil-Medium.ttf</string>
 		<string>NotoSansTamil-Regular.ttf</string>
-		<string>NotoSansTamil-SemiBold.ttf</string>
-		<string>NotoSansTamil-Thin.ttf</string>
-		<string>Roboto-BlackItalic.ttf</string>
-		<string>Roboto-BoldItalic.ttf</string>
-		<string>Roboto-ExtraBold.ttf</string>
-		<string>Roboto-ExtraBoldItalic.ttf</string>
-		<string>Roboto-ExtraLight.ttf</string>
-		<string>Roboto-ExtraLightItalic.ttf</string>
-		<string>Roboto-Italic.ttf</string>
-		<string>Roboto-Light.ttf</string>
-		<string>Roboto-LightItalic.ttf</string>
 		<string>Roboto-Medium.ttf</string>
-		<string>Roboto-MediumItalic.ttf</string>
 		<string>Roboto-Regular.ttf</string>
-		<string>Roboto-SemiBold.ttf</string>
-		<string>Roboto-SemiBoldItalic.ttf</string>
-		<string>Roboto-Thin.ttf</string>
-		<string>Roboto-ThinItalic.ttf</string>
-		<string>Roboto_SemiCondensed-ThinItalic.ttf</string>
 	</array>
 </dict>
 </plist>

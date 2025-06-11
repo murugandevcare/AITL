@@ -1,4 +1,4 @@
 
-export const themeColor = {
-    greenColor: '#81e980'
+export const theme = {
+    color: '#4CAF50'
 }

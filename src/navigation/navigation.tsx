@@ -3,8 +3,10 @@ import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import SignIn from '../screens/auth/SignIn';
 import Login from '../screens/auth/Login';
+import { RootStackParams } from './types';
 
-const Stack = createNativeStackNavigator();
+
+const Stack = createNativeStackNavigator<RootStackParams>();
 
 const Navigation: React.FC = () => {
     return (
