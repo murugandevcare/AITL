@@ -15,6 +15,9 @@ module.exports = {
         'roboto-bold': "Roboto-Bold",
         'roboto-black': "Roboto-Black",
       },
+      colors: {
+        'theme-color': "#4CAF50",
+      },
     },
   },
   plugins: [],

@@ -1,11 +1,16 @@
-import React, { FC } from 'react';
-import { Text, TextStyle, View } from 'react-native';
- 
+import React, {FC} from 'react';
+import {Text as PaperText} from 'react-native-paper';
+import {cssInterop} from 'nativewind';
+import { TextStyle } from 'react-native';
+
+cssInterop(PaperText, {
+  className: 'style',
+});
+
 type LanguageType = 'English' | 'Tamil';
 
 interface CustomTextProps {
-  fontClassName?: string
-  language?: LanguageType
+  language?: LanguageType;
   style?: TextStyle | TextStyle[];
   children?: React.ReactNode;
   className?: string;
@@ -22,22 +27,16 @@ const CustomText: FC<CustomTextProps> = ({
   onLayout,
   ...props
 }) => {
-
-  const baseStyle = Array.isArray(style) ? Object.assign({}, ...style) : style || {};
-  const finalStyle: TextStyle = {
-    ...baseStyle,
-  };
-
   return (
-      <Text
-        style={finalStyle}
-        numberOfLines={numberOfLines}
-        onLayout={onLayout}
-        className={className}
-        {...props}
-      >
-        {children}
-      </Text>
+    <PaperText
+      style={style}
+      className={className}
+      numberOfLines={numberOfLines}
+      onLayout={onLayout}
+      {...props}
+    >
+      {children}
+    </PaperText>
   );
 };
 

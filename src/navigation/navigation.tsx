@@ -4,6 +4,7 @@ import React from 'react';
 import SignIn from '../screens/auth/SignIn';
 import Login from '../screens/auth/Login';
 import { RootStackParams } from './types';
+import Nilai from '../screens/nilai/Nilai';
 
 
 const Stack = createNativeStackNavigator<RootStackParams>();
@@ -20,6 +21,11 @@ const Navigation: React.FC = () => {
                 <Stack.Screen
                     name="Login"
                     component={Login}
+                    options={{ headerShown: false }}
+                />
+                <Stack.Screen
+                    name="Nilai"
+                    component={Nilai}
                     options={{ headerShown: false }}
                 />
             </Stack.Navigator>
