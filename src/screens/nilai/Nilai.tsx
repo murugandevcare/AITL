@@ -11,8 +11,8 @@ const Nilai: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className="flex-1">
-      <SafeAreaView className="flex-1 bg-theme-color">
+    <View className="flex-1 bg-theme-color">
+      <SafeAreaView className="flex-1">
         <ScrollView className="bg-white">
           <View className="relative items-center">
             <View

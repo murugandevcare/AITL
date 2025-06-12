@@ -1,11 +1,8 @@
 import React from 'react';
 import {
   View,
-  Text,
   Image,
-  TouchableOpacity,
   StatusBar,
-  ImageBackground,
 } from 'react-native';
 import {theme} from '../../theme/theme';
 import {SafeAreaView} from 'react-native-safe-area-context';

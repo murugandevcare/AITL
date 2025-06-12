@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   customTabBar: {
     position: 'absolute',
-    bottom: 50,
+    bottom: 45,
     left: 20,
     right: 20,
     backgroundColor: '#CCF5CC',
