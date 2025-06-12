@@ -12,7 +12,7 @@ const Login: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
   
   return (
-    <View className="flex-1" style={{backgroundColor: theme.color}}>
+    <View className="flex-1 bg-theme-color">
       <SafeAreaView className="flex-1">
         <ScrollView className="bg-white">
           <View
@@ -49,7 +49,7 @@ const Login: React.FC = () => {
                 </CustomText>
                 <TextInput secureTextEntry className="p-4 bg-white rounded-xl" />
                 <View className="flex-1 justify-center items-center mt-6">
-                  <CustomButton className="bg-theme-color rounded-md" onPress={() => navigation.navigate('Nilai')}>
+                  <CustomButton className="bg-green-500 rounded-md"  onPress={() => navigation.navigate('Nilai')}>
                     <CustomText className="text-white font-bold">
                       Login
                     </CustomText>

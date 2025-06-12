@@ -5,6 +5,8 @@ import SignIn from '../screens/auth/SignIn';
 import Login from '../screens/auth/Login';
 import { RootStackParams } from './types';
 import Nilai from '../screens/nilai/Nilai';
+import Lesson from '../screens/lesson/Lesson';
+import BottomTabs from './BottomTabs';
 
 
 const Stack = createNativeStackNavigator<RootStackParams>();
@@ -26,6 +28,11 @@ const Navigation: React.FC = () => {
                 <Stack.Screen
                     name="Nilai"
                     component={Nilai}
+                    options={{ headerShown: false }}
+                />
+                <Stack.Screen
+                    name="Lesson"
+                    component={BottomTabs}
                     options={{ headerShown: false }}
                 />
             </Stack.Navigator>

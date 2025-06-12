@@ -1,4 +1,4 @@
 
 export const theme = {
-    color: '#4CAF50'
+    color: '#7ee67d'
 }

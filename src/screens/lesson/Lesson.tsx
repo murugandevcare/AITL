@@ -5,14 +5,15 @@ import {theme} from '../../theme/theme';
 import CustomText from '../../components/CustomText';
 import {useNavigation} from '@react-navigation/native';
 import {NavigationProp} from '../../navigation/types';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-const Nilai: React.FC = () => {
-  const levels = ['நிலை 1', 'நிலை 2', 'நிலை 3', 'நிலை 4', 'நிலை 5'];
+const Lesson: React.FC = () => {
+  const levels = ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Lesson 4', 'Lesson 5', 'Lesson 6', 'Lesson 1', 'Lesson 2', 'Lesson 3', 'Lesson 4', 'Lesson 5', 'Lesson 6'];
   const navigation = useNavigation<NavigationProp>();
 
   return (
-    <View className="flex-1">
-      <SafeAreaView className="flex-1 bg-theme-color">
+    <View className="flex-1 bg-theme-color">
+      <SafeAreaView>
         <ScrollView className="bg-white">
           <View className="relative items-center">
             <View
@@ -27,11 +28,11 @@ const Nilai: React.FC = () => {
               />
             </View>
             <View className="absolute">
-              <CustomText className="text-center text-lg mt-28 font-[500] pl-6 pr-6 ">
-                Get started with your
+              <CustomText className="text-center text-lg mt-28 font-[700] pl-6 pr-6 ">
+                நிலை 1
               </CustomText>
-              <CustomText className="text-center text-lg font-[700] pl-6 pr-6 ">
-                நிலை !
+              <CustomText className="text-center text-lg font-[500] pl-6 pr-6 ">
+                Tap. Learn. Shine
               </CustomText>
             </View>
           </View>
@@ -40,12 +41,15 @@ const Nilai: React.FC = () => {
               {levels.map((level, index) => (
                 <View
                   key={index}
-                  className="border border-theme-color rounded-xl py-3 px-4 items-center">
-                  <TouchableOpacity
-                    onPress={() => navigation.navigate('Lesson')}>
-                    <CustomText className="text-base font-bold">
+                  className="border border-theme-color rounded-xl py-3 px-4 flex-row items-center justify-between">
+                  <TouchableOpacity>
+                    <CustomText className="text-base font-bold ">
                       {level}
                     </CustomText>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity>
+                    <MaterialIcons name="download" size={20}  />
                   </TouchableOpacity>
                 </View>
               ))}
@@ -57,4 +61,4 @@ const Nilai: React.FC = () => {
   );
 };
 
-export default Nilai;
+export default Lesson;
