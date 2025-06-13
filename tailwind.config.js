@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -16,7 +17,7 @@ module.exports = {
         'roboto-black': "Roboto-Black",
       },
       colors: {
-        'theme-color': "#7ee67d",
+        'theme-color': "#58c056",
       },
     },
   },

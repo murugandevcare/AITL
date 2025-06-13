@@ -27,7 +27,9 @@ const CustomButton: FC<CustomButtonProps> = ({
   children,
   ...props
 }) => {
-  const combinedClassName = `${className} ${disabled ? 'opacity-65' : ''}`.trim();
+  const combinedClassName = `${className} ${
+    disabled ? 'opacity-65' : ''
+  }`.trim();
   return (
     <PaperButton
       mode={mode}

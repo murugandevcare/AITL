@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {Text as PaperText} from 'react-native-paper';
 import {cssInterop} from 'nativewind';
-import { TextStyle } from 'react-native';
+import {TextStyle} from 'react-native';
 
 cssInterop(PaperText, {
   className: 'style',
@@ -33,8 +33,7 @@ const CustomText: FC<CustomTextProps> = ({
       className={className}
       numberOfLines={numberOfLines}
       onLayout={onLayout}
-      {...props}
-    >
+      {...props}>
       {children}
     </PaperText>
   );

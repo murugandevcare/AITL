@@ -1,12 +1,15 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import SignIn from '../screens/auth/SignIn';
-import Login from '../screens/auth/Login';
+
 import { RootStackParams } from './types';
-import Nilai from '../screens/nilai/Nilai';
-import Lesson from '../screens/lesson/Lesson';
+import SignIn from '../features/auth/components/SignIn';
+import Login from '../features/auth/components/Login';
+import Nilai from '../features/nilai/components/Nilai';
 import BottomTabs from './BottomTabs';
+// import Nilai from '../screens/nilai/Nilai';
+// import Lesson from '../screens/lesson/Lesson';
+// import BottomTabs from './BottomTabs';
 
 
 const Stack = createNativeStackNavigator<RootStackParams>();
@@ -25,7 +28,7 @@ const Navigation: React.FC = () => {
                     component={Login}
                     options={{ headerShown: false }}
                 />
-                <Stack.Screen
+                 <Stack.Screen
                     name="Nilai"
                     component={Nilai}
                     options={{ headerShown: false }}
